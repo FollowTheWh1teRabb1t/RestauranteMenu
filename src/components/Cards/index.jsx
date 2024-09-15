@@ -6,7 +6,12 @@ const Cards = ({ produto }) => {
     return(
         <div className={styles.container}>
             <figure>
-                <Image src={produto.imagem} alt={produto.nome} />
+                    <Image
+                src={produto.imagem}
+                alt={produto.nome}
+                width={300}  // Substitua pelo valor real
+                height={200} // Substitua pelo valor real
+            />
             </figure>
             <div className={styles.container_informacoes}>
                 <div>
