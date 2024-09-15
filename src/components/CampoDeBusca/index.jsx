@@ -1,12 +1,16 @@
 "use-client"
 import Image from 'next/image'
 import styles from "./CampoDeBusca.module.css";
-import Lupa from "../../../public/Assets/lupa.png"
-
 const CampoDeBusca = ({textoBuscaDigitado, handleBusca}) => {
     return (
     <div className={styles.container}>
-        <Image className={styles.icone} src={ Lupa } alt="icone"/>
+       <Image
+                className={styles.icone}
+                src="/assets/lupa.png" // Caminho relativo à pasta public
+                alt="icone"
+                width={24} // Defina a largura da imagem
+                height={24} // Defina a altura da imagem
+            />
         <input
         type='text'
         value={textoBuscaDigitado}
