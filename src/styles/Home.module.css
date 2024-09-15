@@ -1,0 +1,61 @@
+.containerBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../public/Assets/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    max-width: 1024px;
+}
+
+.containerBanner h1 {
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0px 0px 10px #ffd700;
+    
+}
+
+.containerBanner p {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 25px;
+    color: #daa520;
+
+}
+
+.container_cards {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+.secao_cards div {
+    text-align: center;
+}
+
+.secao_cards div h2 {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    color: #daa520;
+
+}
+
+@media screen and (max-width: 700px) {
+    .containerBanner p {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .container_principal {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container_cards {
+        flex-direction: column;
+        align-items: center; 
+    }
+}
